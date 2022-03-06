@@ -32,7 +32,7 @@ int TopoPilha_Cheia (TopoPilha *p){
 void TopoPilha_Insere (TopoPilha *p, int x){
 	if (TopoPilha_Cheia(p) == 1 ){
 		setlocale(LC_ALL,"");
-		printf ("\nERRO: A Pilha está cheia");
+		printf ("\nERRO: A Pilha estÃ¡ cheia");
 	} else {
 		p->Topo++;
 		p->Item[p->Topo] = x;
@@ -43,7 +43,7 @@ int TopoPilha_Remove (TopoPilha *p){
 	int aux;
 	if (TopoPilha_Vazia(p) == 1){
 		setlocale(LC_ALL,"");
-		printf("\nERRO: A pilha está vazia");
+		printf("\nERRO: A pilha estÃ¡ vazia");
 	} else {
 		aux = p->Item[p->Topo];
 		p->Topo--;
